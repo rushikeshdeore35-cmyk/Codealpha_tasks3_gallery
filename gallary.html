@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="gallary.css">
+</head>
+<body>
+
+<h1>Image Gallery</h1>
+
+
+<div class="filters">
+  <button onclick="filterImages('all')">All</button>
+  <button onclick="filterImages('nature')">Nature</button>
+  <button onclick="filterImages('city')">City</button>
+</div>
+
+<div class="gallery">
+  <img src="https://images.unsplash.com/photo-1621578847110-61f6cf5a3d9e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8bWFoYXJhc2h0cmF8ZW58MHx8MHx8fDA%3D" class="image nature">
+  <img src="https://images.unsplash.com/photo-1521206644285-8db1549e484f?q=80&w=1167&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="image nature">
+  <img src="https://images.unsplash.com/photo-1626407339413-60f4e6bc455e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fG1haGFyYXNodHJhfGVufDB8fDB8fHww" class="image nature">
+  <img src="https://media.istockphoto.com/id/2233829408/photo/majestic-view-of-rajgad-fort-walls.webp?a=1&b=1&s=612x612&w=0&k=20&c=Tlk0WRlcWW6ZUJF0q4-CmIt-6BIq4DHEugyoQ7cf3NQ=" class="image nature">
+  <img src="https://images.unsplash.com/photo-1729326299413-e8338dcb9e8b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTMzfHxtYWhhcmFzaHRyYXxlbnwwfHwwfHx8MA%3D%3D" class="image nature">
+  <img src="https://media.istockphoto.com/id/1315389347/photo/beautiful-sunset-view-of-the-gateway-of-india.webp?a=1&b=1&s=612x612&w=0&k=20&c=hr5qumWSttJOrEpSFdoTkgWF3pzl3E50FdQd7-hu2NA=" class="image city">
+  <img src="https://plus.unsplash.com/premium_photo-1681550093390-14477e7b196a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8bWFoYXJhc2h0cmF8ZW58MHx8MHx8fDA%3D" class="image city">
+  <img src="https://media.istockphoto.com/id/2254520378/photo/city-skyline-silhouettes-against-dark-evening-sky-with-boats.jpg?s=612x612&w=0&k=20&c=qKelVrRZgh_JgiCusTt42fMs-VTvkBHNm7RdO9a0q8Q=" class="image city" >
+  <img src="https://images.unsplash.com/photo-1635576574854-742b07106f8a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzB8fG1haGFyYXNodHJhfGVufDB8fDB8fHww" class="image city">
+  <img src="https://images.unsplash.com/photo-1668577593918-43e743cad2f8?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjI2fHxtYWhhcmFzaHRyYXxlbnwwfHwwfHx8MA%3D%3D" class="image city">
+  <img src="https://images.unsplash.com/photo-1707814918972-ca6d93492fd4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Njh8fG1haGFyYXNodHJhfGVufDB8fDB8fHww" class="image nature">
+  <img src="https://media.istockphoto.com/id/2223963144/photo/skyline-of-mumbai-coastline.jpg?s=612x612&w=0&k=20&c=NvcOd2Uo2n1PYoHa8qYP1bw65DJRUxIpLBUQfmXRK-I=" class="image city">
+  <img src="https://media.istockphoto.com/id/1287053436/photo/mumbai-city-skyline-panoramic-view-india.jpg?s=612x612&w=0&k=20&c=R-GkSyaqwDsHJVD_EwZFMPhNLXTu75LHqXmuJbN50E0=" class="image city">
+  <img src="https://plus.unsplash.com/premium_photo-1667668669608-499c3282f0d1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bWFoYXJhc2h0cmElMjBuYXR1cmV8ZW58MHx8MHx8fDA%3D" class="image nature">
+</div> vv
+
+
+<div class="lightbox" id="lightbox">
+  <span class="close" onclick="closeLightbox()"></span>
+  <button class="prev" onclick="changeImage(-1)"></button>
+  <img id="lightbox-img">
+  <button class="next" onclick="changeImage(1)"></button>
+</div>
+
+<script src="gallary.script.js"></script>
+</body>
+</html>
